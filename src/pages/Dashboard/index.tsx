@@ -1,5 +1,14 @@
 import React from 'react';
 
-const Dashboard: React.FC = () => <h1>Dashboard</h1>;
+import logoImg from '../../assets/logo.svg';
+
+import { Title } from './styles';
+
+const Dashboard: React.FC = () => (
+  <>
+    <img src={logoImg} alt="Github Explorer" />
+    <Title>Explore repositórios no Github</Title>
+  </>
+);
 
 export default Dashboard;
