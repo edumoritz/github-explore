@@ -5,11 +5,10 @@ import GlobalStyle from './styles/global';
 
 const App: React.FC = () => (
   <>
-    <GlobalStyle>
-      <BrowserRouter>
-        <Routes />
-      </BrowserRouter>
-    </GlobalStyle>
+    <GlobalStyle />
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   </>
 );
 
