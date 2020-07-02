@@ -32,6 +32,14 @@
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-one-expression-per-line": "off",
+    "camelcase": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
     "react/jsx-filename-extension": [
       1,
       {
@@ -48,7 +56,34 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": "always",
+        "ObjectPattern": {
+          "multiline": true
+        },
+        "ImportDeclaration": "never",
+        "ExportDeclaration": {
+          "multiline": true,
+          "minProperties": 3
+        }
+      }
+    ],
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          ":": "before"
+        }
+      }
+    ],
+    "tslint.autoFixOnSave": true,
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "no-unexpected-multiline": "error"
   },
   "settings": {
     "import/resolver": {
